@@ -1,2 +1,2 @@
 # Chatzy
-Chatting App Android 
+Chatting App Android (Tugas Pemrograman Mobile 1)
