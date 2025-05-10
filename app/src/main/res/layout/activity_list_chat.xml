@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListChatActivity"
+    android:padding="10dp"
+    android:background="@color/green2">
+
+    <!-- List Chat -->
+
+    <TextView
+        android:id="@+id/messText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="@string/message"
+        android:textColor="@color/white2"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="vertical"
+        android:scrollbarThumbVertical="@color/white_green"
+        android:scrollbarTrackVertical="@color/white_green2"
+        app:layout_constraintTop_toBottomOf="@id/messText"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

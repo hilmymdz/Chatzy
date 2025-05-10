@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/green1">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/btnloginBack"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/loginform"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/loginBG"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello"
+        android:drawableRight="@drawable/chatzyonly"
+        android:drawablePadding="14dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginLeft="36dp"
+        android:textSize="64dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:textColor="@color/white2"
+        android:id="@+id/helloTXT"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:layout_below="@+id/helloTXT"
+        android:layout_marginLeft="36dp"
+        android:textSize="20dp"
+        android:fontFamily="@font/nunito_light"
+        android:textColor="@color/white2"
+        android:id="@+id/wlcmText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonLogin"
+        android:layout_below="@+id/wlcmText"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="105dp"
+        android:textSize="40dp"
+        android:fontFamily="@font/nunito_bold"
+        android:textColor="@color/green1"
+        android:id="@+id/loginTxt"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/loginTxt"
+        android:id="@+id/lytLogin"
+        android:padding="36dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/white2"
+            android:fontFamily="@font/nunito_light"
+            android:textColor="@color/text1"
+            android:padding="15dp"
+            android:hint="Email or Phone"
+            android:textColorHint="@color/text1"
+            android:id="@+id/editMorp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/white2"
+            android:fontFamily="@font/nunito_light"
+            android:textColor="@color/text1"
+            android:padding="15dp"
+            android:hint="Password"
+            android:textColorHint="@color/text1"
+            android:id="@+id/editPass"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/lytLogin"
+        android:gravity="right"
+        android:id="@+id/lytForpass">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgotpass"
+            android:layout_marginRight="36dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/nunito_bold"
+            android:textColor="@color/green1"
+            android:id="@+id/txtForpass"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lytForpass"
+        android:text="@string/buttonLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_shape"
+        android:width="340dp"
+        android:height="50dp"
+        android:textSize="20dp"
+        android:fontFamily="@font/nunito_bold"
+        android:textColor="@color/white2"
+        android:id="@+id/btnLgn"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/btnLgn"
+        android:gravity="center"
+        android:layout_marginTop="79dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dontacc"
+            android:layout_marginRight="36dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/nunito_regular"
+            android:textColor="@color/text1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonSignup"
+            android:fontFamily="@font/nunito_bold"
+            android:textColor="@color/green1"
+            android:textSize="14sp"
+            android:id="@+id/txtRegister"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

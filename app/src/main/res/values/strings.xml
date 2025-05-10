@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Chatzy</string>
+    <string name="tagline">Swipe. Type. Send. Easy. 🔥</string>
+    <string name="buttonLogin">Login</string>
+    <string name="buttonSignup">Sign Up</string>
+    <string name="hello">Hello</string>
+    <string name="welcome">Welcome to ChatZy</string>
+    <string name="logtext">Email or Phone</string>
+    <string name="passtext">Password</string>
+    <string name="forgotpass">Forgot Password?</string>
+    <string name="dontacc">Don’t have an account?</string>
+    <string name="name">Name</string>
+    <string name="confpass">Confirm Password</string>
+    <string name="message">Message’s</string>
+    <string name="descchat"></string>
+    <string name="backlog">Back to login</string>
+</resources>
